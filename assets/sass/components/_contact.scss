@@ -1,0 +1,139 @@
+.contact {
+  @include respond(tab-port) {
+    background: linear-gradient(to right bottom,
+      rgba($color-primary-dark, .95),
+      rgba($color-primary, .95));
+
+  }
+
+  &__footer {
+    height: 12rem;
+    display: grid;
+    grid-gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+
+    &--icon {
+      @include default-icon;
+      fill: $color-white-light;
+
+      &:not(last-child) {
+        margin-right: 1.5rem;
+      }
+
+      @include respond(phone) {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+
+    &--footer {
+      font-size: 1.6rem;
+      color: $color-dark;
+    }
+  }
+
+  &__info {
+    background: linear-gradient(to right,
+      rgba($color-primary-light, .95),
+      rgba($color-primary, .95)),
+      url(/assets/img/contact-image.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    height: 100%;
+    color: $color-white;
+    position: relative;
+
+    &-footer {
+      font-size: 1.6rem;
+      position: absolute;
+      bottom: 5rem;
+      left: 50%;
+      transform: translate(-50%);
+
+      &-link {
+        color: $color-white-gray;
+      }
+    }
+  }
+
+  &__icon {
+    transition: all .3s ease;
+    @include default-icon;
+    fill: $color-white-light;
+
+    &:hover,
+    &:active {
+      fill: $color-white-gray;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+
+    &:active {
+      transform: translateY(0px);
+    }
+
+    &:not(last-child) {
+      margin-right: 1.2rem;
+    }
+
+  }
+
+  &__form {
+
+    @include respond(tab-land) {
+      padding: 0 3rem;
+    }
+
+    .form {
+      @include respond(phone) {
+        font-size: 1.8rem;
+      }
+
+      &-group {
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+
+        &>label {
+          font-size: 1.6rem;
+          margin: 1rem auto;
+
+          @include respond(tab-port) {
+            color: $color-white;
+          }
+        }
+
+        &>input,
+        &>textarea {
+          font-size: 1.6rem;
+          padding: 1.5rem 1rem;
+          border: 1px solid $color-primary-dark;
+          color: $color-dark;
+          box-shadow: none;
+          border-radius: 5px;
+          margin-bottom: 1rem;
+
+          @include respond(tab-land) {
+            padding: 2rem;
+          }
+
+          &:active,
+          &:focus {
+            background-color: rgba($color-white-light, .8);
+          }
+        }
+      }
+    }
+  }
+}

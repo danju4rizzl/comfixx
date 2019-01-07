@@ -1,0 +1,132 @@
+.services {
+  padding-top: $section-top-padding;
+
+  &__inner {
+    margin-bottom: 8rem;
+
+    &--top {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 2.2rem;
+    @include respond(phone) {
+      margin:  0.2rem auto;
+    }
+  }
+  &__box {
+    margin-bottom: 3rem;
+  }
+
+  &__icon,
+  &__heading {
+    margin: $m-smallest;
+
+    @include respond(tab-port) {
+      margin: 1.2rem auto;
+    }
+  }
+
+  &__icon {
+    @include default-icon;
+  }
+  &__title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: $m-smallest;
+  }
+
+}
+
+.banner {
+  background-image: linear-gradient(to bottom,
+    rgba($color-dark, 0.9),
+    rgba($color-dark, 0.8)),
+    url(/assets/img/banner-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  padding: 8rem;
+
+  &>* {
+    color: $color-white;
+  }
+
+  &__heading {
+    &-main {
+      font-size: 5rem;
+      font-family: $font-bold;
+      margin: $m-smaller;
+      text-transform: capitalize;
+
+      @include respond(phone) {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+      }
+    }
+
+    &-sub {font-size: 1.9rem;}
+  }
+}
+
+.about {
+  padding-top: $section-top-padding;
+  background-color: $color-white;
+
+  &__inner {
+    margin-bottom: 9rem;
+  }
+
+  &__text {
+    margin-bottom: 2.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.rate {
+  background-color: rgba($color-white-light, 0.8);
+  transform: skewY(-3deg);
+  min-height: 35rem;
+  display: grid;
+  align-content: center;
+
+  &__inner {
+    transform: skewY(3deg);
+  }
+
+  &__box {
+    margin: 8rem auto;
+  }
+
+  &__icon {
+    fill: $color-primary-light;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-dark-light;
+  }
+}
+
+.projects {
+  padding-top: $section-top-padding;
+  background-color: $color-white;
+  height: 100%;
+  margin-bottom: 5rem;
+
+  &__heading {
+    text-align: center;
+  }
+}

@@ -1,0 +1,57 @@
+.skills {
+    &__heading {
+        font-size: 3rem;
+        font-family: $font-bold;
+        margin: $m-small;
+    }
+
+    .skillbar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        font-size: 1.7rem;
+        letter-spacing: 1.5px;
+
+        row-gap: 1rem;
+
+        &:not(:last-child) {margin-bottom: 2.5rem;}
+
+        &__title {
+            grid-column: 1 / 2;
+            justify-self: start;
+            text-transform: uppercase;
+        }
+
+        &__percent {
+            grid-column: 2 / -1;
+            justify-self: end;
+
+            &::after {content: '%';}
+        }
+
+        .skill {
+            grid-row: 2 / -1;
+            grid-column: 1 / -1;
+            background-color: $color-dark;
+            border-radius: 10rem;
+            height: 1.1rem;
+
+            &__bar {
+                height: 100%;
+                background-color: $color-primary-light;
+
+                &--html {max-width: 84%;}
+
+                &--js {max-width: 61%;}
+
+                &--bs {max-width: 78%;}
+
+                &--sass {max-width: 67%;}
+            }
+
+            &__grow {
+                animation: skillGrow 4s ease;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@keyframes ctaMove {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    20% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    70% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scaleX(-3);
+    }
+
+    100% {
+        transform: scaleX(0);
+
+    }
+}
+
+@keyframes rotateIt {
+    0% {
+        transform: rotate3d(0, 1, 0, -60deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 60deg);
+
+    }
+}
+
+@keyframes skillGrow {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

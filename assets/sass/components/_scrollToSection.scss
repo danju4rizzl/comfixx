@@ -1,0 +1,68 @@
+.scrollDown {
+  text-align: center;
+  margin: 8rem auto;
+  line-height: 2rem;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include respond(phone) {
+    display: none;
+  }
+
+  &__link:link,
+  &__link:visited,
+  &__link:focus {
+    display: inline-block;
+    outline: 0;
+    animation: ctaMove 3s ease;
+    animation-iteration-count: infinite;
+  }
+
+  &__link:hover,
+  &__link:active {
+    animation-play-state: paused;
+  }
+
+  &__icon {
+    @include chevron-icons;
+
+    &:hover,
+    &:active {
+      animation-iteration-count: 1;
+      fill-opacity: 0.5;
+    }
+  }
+
+
+}
+
+
+.btt {
+  position: relative;
+  bottom: 4rem;
+  right: 5rem;
+  position: fixed;
+  z-index: 100;
+  display: none;
+
+  @include respond(phone) {
+    right: 3rem;
+    bottom: 10rem;
+  }
+
+  &__link:link,
+  &__link:visited,
+  &__link:focus {
+    outline: 0;
+
+  }
+
+  &:hover,
+  &:active {
+    fill-opacity: 0.5;
+  }
+
+  &__icon {@include chevron-icons;}
+}

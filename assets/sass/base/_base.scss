@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+    box-sizing: border-box;
+    line-height: 1.7rem;
+    position: relative;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}

@@ -1,0 +1,46 @@
+.modal {
+  background-color: rgba($color-dark, 0.8);
+
+  &-dialog {
+    transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.29, 1.18) !important;
+  }
+
+  &-content {
+    border-radius: 0;
+  }
+
+  &-body {
+    height: 80vh;
+  }
+
+  &__display {
+    height: 100%;
+    padding: 1.2rem;
+  }
+
+
+  &__info {
+    text-align: center;
+}
+
+  &__title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: $font-medium;
+    color: $color-dark-light;
+
+  }
+
+  &__text {
+    margin: $m-mid;
+    font-size: 1.9rem;
+    line-height: 150%;
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+
+  }
+}
