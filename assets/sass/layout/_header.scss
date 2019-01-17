@@ -1,9 +1,14 @@
 .header {
     padding-top: 3rem;
+    background-image: -webkit-gradient(linear,
+        left top, left bottom,
+        from(rgba($color-primary-dark, .95)),
+        to(rgba($color-dark, .95))),
+        url('/assets/img/hero-image.jpg');
     background-image: linear-gradient(to bottom,
         rgba($color-primary-dark, .95),
         rgba($color-dark, .95)),
-        url(/assets/img/hero-image.jpg);
+        url('/assets/img/hero-image.jpg');
     height: 100vh;
     width: 100%;
     background-blend-mode: multiply;
@@ -14,12 +19,29 @@
 
     &__logo-box {
         position: absolute;
-        top: 4rem;
-        left: 4rem;
+        top: 4.5rem;
+        left: 6rem;
+        box-shadow: 0 1rem 3rem rgba($color-white, .1);
+        border-radius: 100rem;
+
+        @include respond(phone) {
+            top: 3rem;
+            left: 2rem;
+        }
     }
 
     &__logo {
-        height: 4.5rem;
+        transition: all .3s linear;
+        height: 9rem;
+
+        @include respond(phone) {
+            height: 5rem;
+        }
+
+        &:hover,
+        &:active {
+            opacity: .8;
+        }
 
     }
 
@@ -43,6 +65,7 @@
 
     &__icon {
         display: inline-block;
+        -webkit-transition: all .3s ease;
         transition: all .3s ease;
 
         &:not(:last-child) {
@@ -62,10 +85,12 @@
         }
 
         &:hover {
+            -webkit-transform: translateY(-4px);
             transform: translateY(-4px);
         }
 
         &:active {
+            -webkit-transform: translateY(0px);
             transform: translateY(0px);
         }
     }

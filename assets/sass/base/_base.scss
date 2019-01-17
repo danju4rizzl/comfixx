@@ -3,7 +3,8 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 html {
@@ -11,7 +12,8 @@ html {
 }
 
 body {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     line-height: 1.7rem;
     position: relative;
 }
@@ -20,7 +22,3 @@ a {
     text-decoration: none !important;
 }
 
-::selection {
-    background-color: $color-primary;
-    color: $color-white;
-}

@@ -7,6 +7,7 @@
   font-family: $font-regular;
   border: none;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   position: relative;
 
@@ -19,11 +20,14 @@
   &:active {
     cursor: pointer;
     background-color: $color-primary-light;
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-dark, 0.2);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-box-shadow: 0 1rem 2rem rgba($color-dark, 0.2);
+            box-shadow: 0 1rem 2rem rgba($color-dark, 0.2);
 
     &::after {
-      transform: scaleX(1.4) scaleY(1.6);
+      -webkit-transform: scaleX(1.4) scaleY(1.6);
+              transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
     }
   }
@@ -31,8 +35,10 @@
   &:active,
   &:focus {
     outline: none;
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba($color-dark, 0.2);
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba($color-dark, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba($color-dark, 0.2);
   }
 
 
@@ -82,8 +88,10 @@
     &:hover,
     &:active {
       background-color: $color-primary-light;
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-dark, 0.2);
+      -webkit-transform: translateY(-3px);
+              transform: translateY(-3px);
+      -webkit-box-shadow: 0 1rem 2rem rgba($color-dark, 0.2);
+              box-shadow: 0 1rem 2rem rgba($color-dark, 0.2);
       color: $color-white-light;
 
       @include respond(tab-port) {
@@ -108,3 +116,4 @@
     }
   }
 }
+

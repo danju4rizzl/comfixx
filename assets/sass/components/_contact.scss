@@ -1,17 +1,25 @@
 .contact {
+  
   @include respond(tab-port) {
+    background: -webkit-gradient(linear,
+      left top, right bottom,
+      from(rgba($color-primary-dark, .95)),
+      to(rgba($color-primary, .95)));
     background: linear-gradient(to right bottom,
       rgba($color-primary-dark, .95),
       rgba($color-primary, .95));
-
+      padding: 1.8rem;
   }
 
   &__footer {
     height: 12rem;
     display: grid;
     grid-gap: 1.5rem;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     text-align: center;
 
 
@@ -36,6 +44,11 @@
   }
 
   &__info {
+    background: -webkit-gradient(linear,
+      left top, right top,
+      from(rgba($color-primary-light, .95)),
+      to(rgba($color-primary, .95))),
+      url(/assets/img/contact-image.jpg);
     background: linear-gradient(to right,
       rgba($color-primary-light, .95),
       rgba($color-primary, .95)),
@@ -47,7 +60,8 @@
     background-attachment: fixed;
     text-align: center;
     display: grid;
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     height: 100%;
     color: $color-white;
     position: relative;
@@ -57,7 +71,8 @@
       position: absolute;
       bottom: 5rem;
       left: 50%;
-      transform: translate(-50%);
+      -webkit-transform: translate(-50%);
+              transform: translate(-50%);
 
       &-link {
         color: $color-white-gray;
@@ -66,6 +81,7 @@
   }
 
   &__icon {
+    -webkit-transition: all .3s ease;
     transition: all .3s ease;
     @include default-icon;
     fill: $color-white-light;
@@ -76,11 +92,13 @@
     }
 
     &:hover {
-      transform: translateY(-4px);
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
     }
 
     &:active {
-      transform: translateY(0px);
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
     }
 
     &:not(last-child) {
@@ -120,7 +138,8 @@
           padding: 1.5rem 1rem;
           border: 1px solid $color-primary-dark;
           color: $color-dark;
-          box-shadow: none;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
           border-radius: 5px;
           margin-bottom: 1rem;
 

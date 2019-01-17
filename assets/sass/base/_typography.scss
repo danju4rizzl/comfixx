@@ -12,7 +12,7 @@
   
 }
 body {
-   font-family: 'Quicksand', arial;
+   font-family: Quicksand, Arial, Helvetica, sans-serif;
   color: $color-dark;
 }
 
@@ -85,7 +85,8 @@ body {
     &--projects {
       &::after {
         left: 50%;
-        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+                transform: translate(-50%);
       }
     }
     

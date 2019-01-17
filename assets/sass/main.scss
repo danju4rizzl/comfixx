@@ -1,4 +1,3 @@
-
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -13,10 +12,12 @@
 @import "components/modal";
 @import "components/nav";
 @import "components/scrollToSection";
+@import "components/scrollbar";
 @import "components/project";
 @import "components/contact";
 
 
 @import "layout/header";
 @import "pages/home";
+
 
