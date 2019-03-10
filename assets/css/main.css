@@ -81,14 +81,12 @@
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 1.7rem;
   position: relative; }
@@ -362,7 +360,7 @@ body {
   width: 7rem;
   position: fixed;
   top: 6rem;
-  right: 6rem;
+  left: 6rem;
   border-radius: 50%;
   z-index: 2000;
   -webkit-box-shadow: 0 1rem 3rem rgba(41, 50, 60, 0.1);
@@ -372,11 +370,11 @@ body {
   @media only screen and (max-width: 56.25em) {
     .navigation__button {
       top: 4rem;
-      right: 4rem; } }
+      left: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__button {
       top: 3rem;
-      right: 3rem; } }
+      left: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -384,7 +382,7 @@ body {
   border-radius: 50%;
   position: fixed;
   top: 6.5rem;
-  right: 6.5rem;
+  left: 6.5rem;
   background-image: radial-gradient(#17A286, #1BBC9B);
   z-index: 1000;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -395,11 +393,11 @@ body {
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem;
-      right: 4.5rem; } }
+      left: 4.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
       top: 3.5rem;
-      right: 3.5rem; } }
+      left: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -437,7 +435,7 @@ body {
   -webkit-transition: all .4s;
   transition: all .4s; }
   .navigation__link:link span, .navigation__link:visited span {
-    margin-right: 1.5rem;
+    margin-left: 1.5rem;
     display: inline-block; }
 
 .navigation__link:hover, .navigation__link:active {
@@ -528,8 +526,8 @@ body {
   display: none; }
   @media only screen and (max-width: 37.5em) {
     .btt {
-      right: 3rem;
-      bottom: 10rem; } }
+      right: 2.5rem;
+      bottom: 7.5rem; } }
   .btt__link:link, .btt__link:visited, .btt__link:focus {
     outline: 0; }
   .btt:hover, .btt:active {

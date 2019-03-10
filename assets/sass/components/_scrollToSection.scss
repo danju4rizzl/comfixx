@@ -34,10 +34,7 @@
       fill-opacity: 0.5;
     }
   }
-
-
 }
-
 
 .btt {
   position: relative;
@@ -48,15 +45,14 @@
   display: none;
 
   @include respond(phone) {
-    right: 3rem;
-    bottom: 10rem;
+    right: 2.5rem;
+    bottom: 7.5rem;
   }
 
   &__link:link,
   &__link:visited,
   &__link:focus {
     outline: 0;
-
   }
 
   &:hover,
@@ -64,5 +60,7 @@
     fill-opacity: 0.5;
   }
 
-  &__icon {@include chevron-icons;}
+  &__icon {
+    @include chevron-icons;
+  }
 }
