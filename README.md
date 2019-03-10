@@ -1,7 +1,3 @@
-# comfixx
-
-If you would like to use it personal you then folow the intructions below
-
 # Deejay.com
 
 deejay.com is a personal portfolio website to view my work and links to much more...
