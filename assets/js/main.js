@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   var typed = new Typed("#typed", {
-    strings: ["",  "Freelancer", "Web Designer","Front-End Dev", "Web Developer", "Remote Work"],
+    strings: ["", "Freelancer", "Web Designer", "Front-End Dev", "Web Developer", "Remote Work"],
     typeSpeed: 100,
     backSpeed: 50,
     backDelay: 2000,
