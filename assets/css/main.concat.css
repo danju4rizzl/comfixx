@@ -1571,8 +1571,8 @@ body {
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6rem;
-  left: 6rem;
+  top: 3.5rem;
+  left: 3.5rem;
   border-radius: 50%;
   z-index: 2000;
   -webkit-box-shadow: 0 1rem 3rem rgba(41, 50, 60, 0.1);
@@ -1593,8 +1593,8 @@ body {
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  left: 6.5rem;
+  top: 4rem;
+  left: 4rem;
   background-image: radial-gradient(#17A286, #1BBC9B);
   z-index: 1000;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -1644,8 +1644,8 @@ body {
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FFFFFF 50%);
   background-size: 220%;
-  -webkit-transition: all .4s;
-  transition: all .4s; }
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; }
   .navigation__link:link span, .navigation__link:visited span {
     margin-left: 1.5rem;
     display: inline-block; }
@@ -1676,12 +1676,12 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    -webkit-transition: all .2s;
-    transition: all .2s; }
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
   .navigation__icon::before {
-    top: -.8rem; }
+    top: -0.8rem; }
   .navigation__icon::after {
-    top: .8rem; }
+    top: 0.8rem; }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }
@@ -1970,13 +1970,13 @@ body {
         top: 3rem;
         left: 2rem; } }
   .header__logo {
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     height: 9rem; }
     @media only screen and (max-width: 37.5em) {
       .header__logo {
         height: 5rem; } }
     .header__logo:hover, .header__logo:active {
-      opacity: .8; }
+      opacity: 0.8; }
   .header__jumbotron {
     text-align: center;
     color: #FFFFFF;
@@ -1993,14 +1993,16 @@ body {
         margin: 3rem auto; } }
   .header__icon {
     display: inline-block;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease; }
-    .header__icon:not(:last-child) {
-      margin-right: .5rem; }
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     .header__icon-item {
-      width: 3.6rem;
-      height: 3.6rem;
+      width: 3.3rem;
+      height: 3.3rem;
       fill: #FFFFFF; }
+      @media only screen and (max-width: 37.5em) {
+        .header__icon-item {
+          width: 2.8rem;
+          height: 2.8rem; } }
       .header__icon-item:hover, .header__icon-item:active {
         fill: #DADFE1; }
     .header__icon:hover {

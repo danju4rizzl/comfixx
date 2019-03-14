@@ -1,97 +1,97 @@
 .header {
-    padding-top: 3rem;
-    background-image: -webkit-gradient(linear,
-        left top, left bottom,
-        from(rgba($color-primary-dark, .95)),
-        to(rgba($color-dark, .95))),
-        url('/assets/img/hero-image.jpg');
-    background-image: linear-gradient(to bottom,
-        rgba($color-primary-dark, .95),
-        rgba($color-dark, .95)),
-        url('/assets/img/hero-image.jpg');
-    height: 100vh;
-    width: 100%;
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
+  padding-top: 3rem;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba($color-primary-dark, 0.95)),
+      to(rgba($color-dark, 0.95))
+    ),
+    url("/assets/img/hero-image.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-primary-dark, 0.95),
+      rgba($color-dark, 0.95)
+    ),
+    url("/assets/img/hero-image.jpg");
+  height: 100vh;
+  width: 100%;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 
-    &__logo-box {
-        position: absolute;
-        top: 4.5rem;
-        left: 6rem;
-        box-shadow: 0 1rem 3rem rgba($color-white, .1);
-        border-radius: 100rem;
+  &__logo-box {
+    position: absolute;
+    top: 4.5rem;
+    left: 6rem;
+    box-shadow: 0 1rem 3rem rgba($color-white, 0.1);
+    border-radius: 100rem;
 
-        @include respond(phone) {
-            top: 3rem;
-            left: 2rem;
-        }
+    @include respond(phone) {
+      top: 3rem;
+      left: 2rem;
+    }
+  }
+
+  &__logo {
+    transition: all 0.3s linear;
+    height: 9rem;
+
+    @include respond(phone) {
+      height: 5rem;
     }
 
-    &__logo {
-        transition: all .3s linear;
-        height: 9rem;
+    &:hover,
+    &:active {
+      opacity: 0.8;
+    }
+  }
 
-        @include respond(phone) {
-            height: 5rem;
-        }
+  &__jumbotron {
+    text-align: center;
+    color: $color-white;
+    display: block;
+    font-size: 10rem;
+    @include absolute-center;
+  }
 
-        &:hover,
-        &:active {
-            opacity: .8;
-        }
+  &__icons {
+    margin: $m-smallest;
 
+    @include respond(tab-port) {
+      margin: $m-small;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &-item {
+      width: 3.3rem;
+      height: 3.3rem;
+      fill: $color-white;
+      @include respond(phone) {
+        width: 2.8rem;
+        height: 2.8rem;
+      }
+      &:hover,
+      &:active {
+        fill: $color-white-gray;
+      }
     }
 
-    &__jumbotron {
-        text-align: center;
-        color: $color-white;
-        display: block;
-        font-size: 10rem;
-        @include absolute-center;
+    &:hover {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
     }
 
-
-    &__icons {
-
-        margin: $m-smallest;
-
-        @include respond(tab-port) {
-            margin: $m-small;
-        }
+    &:active {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
     }
-
-    &__icon {
-        display: inline-block;
-        -webkit-transition: all .3s ease;
-        transition: all .3s ease;
-
-        &:not(:last-child) {
-            margin-right: .5rem;
-        }
-
-
-        &-item {
-            width: 3.6rem;
-            height: 3.6rem;
-            fill: $color-white;
-
-            &:hover,
-            &:active {
-                fill: $color-white-gray;
-            }
-        }
-
-        &:hover {
-            -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
-        }
-
-        &:active {
-            -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-        }
-    }
+  }
 }
