@@ -7,7 +7,6 @@
     "watch:sass": "node-sass assets/sass/main.scss assets/css/main.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-
     "compile:sass": "node-sass assets/sass/main.scss assets/css/main.comp.css",
     "concat:css": "concat -o assets/css/main.concat.css assets/css/aos.css assets/css/slick.css assets/css/slick-theme.css assets/css/main.comp.css",
     "build:css": "npm-run-all compile:sass concat:css"
